@@ -19,6 +19,38 @@ class counterPOS
 	{
 		
 	}
+	void choicemenu()
+	{
+		int choice;
+		System.out.println("Enter the choice");
+		System.out.println("1. Add Item");
+		System.out.println("2. Restart");
+		System.out.println("3. Exit Application");
+		Scanner s=new Scanner(System.in);
+		choice=s.nextInt();
+		if(choice==1)
+		{
+			
+		}
+		else if(choice==2)
+		{
+			
+		}
+		else if(choice==3)
+		{
+			
+		}
+		else
+		{
+			System.out.println("Invalid Choice");
+			choicemenu();
+		}
+			
+	}
+	counterPOS()
+	{
+		choicemenu();
+	}
 }
 class Items
 {
@@ -57,15 +89,15 @@ public class McD_POS {
         System.out.println("2. Counter Attendant");
         System.out.println("3. Exit Application");
         Scanner s=new Scanner(System.in);
-        int choice=s.nextInt();s.close();
+        int choice=s.nextInt();
         
         if(choice==1)
         {
-     	   
+     	   itemFromManager m1=new itemFromManager();
         }
         else if(choice==2)
         {
-        	
+        	counterPOS c1=new counterPOS(); 
         }
         else if(choice==3)
         {
@@ -74,6 +106,7 @@ public class McD_POS {
         else
         {
         System.out.println("Invalid Choice");
+        login();
         }
 	}
 
